@@ -2,11 +2,11 @@
     <html>
 
     <head>
-        <title>Player</title>
+        <title id="header_title">ciencias</title>
         <link rel="stylesheet" type="text/css" href=".\style\player.css">
     </head>
 
-        <body>
+        <body onload="verify_url()">
             <header id="home" class="">
                 <nav>
                     <ul>
@@ -21,10 +21,10 @@
                 </nav>
             </header>  
           
-            <div id="painel" onload="verify_url()">
+            <div id="painel" >
                 <div class="row">
                     <div id="menu">
-                        <h2>Português:</h2>
+                        <h2 id ="title"></h2>
                         <div class="card__progress">
                             <div class="area_progress_p" aria-hidden="true"></div>
                             <span class="area_progress_number_p" aria-label="Progresso do curso">10%</span>

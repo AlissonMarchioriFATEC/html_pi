@@ -13,15 +13,47 @@ let link10 = "https://www.youtube.com/embed/kasUtDtUFrI"
 // scascascasc
 
 function verify_url() {
-    change_url
+    let header_value = document.title
+    console.log(header_value)
+    if(header_value == "ciencias"){
+        document.getElementById("title").innerHTML = "ciencias: "
+        
+    }else if(header_value == "geografia"){
+         document.getElementById("title").innerHTML = "geografia: "
+    }else if(header_value == "historia"){
+         document.getElementById("title").innerHTML = "historia: "
+    }else if(header_value == "matematica"){
+         document.getElementById("title").innerHTML = "matematica: "
+    }else if(header_value == "portugues"){
+         document.getElementById("title").innerHTML = "portugues: "
+    }else {
+        alert("pagina nao encontrada")
+    }
 }
 
 function change_page(id){
     console.log(id)
     if(id == "ciencias"){
         alert("pagina de ciencias")
+        window.location = "./ciencias.html"
+
+    }else if(id == "geografia"){
+        alert("pagina de geografia")
         window.location = "./player.html"
-    }else{
+
+    }else if(id == "historia"){
+        alert("pagina de historia")
+        window.location = "./player.html"
+
+    }else if(id == "matematica"){
+        alert("pagina de matematica")
+        window.location = "./player.html"
+
+    }else if(id == "portugues"){
+        alert("pagina de portugues")
+        window.location = "./portugues.html"
+
+    }else {
         alert("pagina nao encontrada")
     }
 }
